@@ -14,7 +14,6 @@ and open the template in the editor.
         <link href="css/font-awesome.css" rel="stylesheet" />
         <script src="js/modernizr.custom.js" type="text/javascript"></script>
         <script src="js/jquery-2.0.0.min.js"></script>
-        <script src="js/smoothscroll/jquery.smoothwheel.js" type="text/javascript" ></script>
         <script>
             $(function () {
 
@@ -96,7 +95,7 @@ and open the template in the editor.
 
         <header style="background-color: rgba(0,0,0,0)" id="ha-header" class="ha-header ha-header-large">
             <div style="background-color: rgba(0,0,0,0)" class="ha-header-perspective">
-                <div class="ha-header-front">
+                <div style="background-color: rgba(0,0,0,0)" class="ha-header-front">
                     <h1>Avicio.com</h1>
                     <nav>
                         <a style="border: none;color: #2d383f;">Home</a>
@@ -124,7 +123,7 @@ and open the template in the editor.
             <div id="container">
                 <video autoplay loop muted>
                     <source src="videos/video.MP4" type="video/mp4">
-                    <source src="video.webm" type="video/webm">
+                    <source src="videos/video.webm" type="video/webm">
                 </video>
                 <div class="content">
                     <h1 style="color: #fff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">AVICIO</h1>
@@ -162,12 +161,6 @@ and open the template in the editor.
                 }, {offset: '100%'});
             });
         </script>
-        <script>
-
-            $(document).ready(function () {
-                $("body").smoothWheel();
-            });
-
-        </script>
+        
     </body>
 </html>
