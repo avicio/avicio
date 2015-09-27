@@ -11,8 +11,10 @@ and open the template in the editor.
         <link href="css/component.css" rel="stylesheet"/>
         <link href="css/normalize.css" rel="stylesheet"/>
         <link href="css/style.css" rel="stylesheet"/>
+        <link href="css/font-awesome.css" rel="stylesheet" />
         <script src="js/modernizr.custom.js" type="text/javascript"></script>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/jquery-2.0.0.min.js"></script>
+        <script src="js/smoothscroll/jquery.smoothwheel.js" type="text/javascript" ></script>
         <script>
             $(function () {
 
@@ -92,8 +94,8 @@ and open the template in the editor.
     </head>
     <body>
 
-        <header id="ha-header" class="ha-header ha-header-large">
-            <div class="ha-header-perspective">
+        <header style="background-color: rgba(0,0,0,0)" id="ha-header" class="ha-header ha-header-large">
+            <div style="background-color: rgba(0,0,0,0)" class="ha-header-perspective">
                 <div class="ha-header-front">
                     <h1>Avicio.com</h1>
                     <nav>
@@ -125,7 +127,7 @@ and open the template in the editor.
                     <source src="video.webm" type="video/webm">
                 </video>
                 <div class="content">
-                    <h3 style="color: #fff">AVICIO</h3>
+                    <h1 style="color: #fff;text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">AVICIO</h1>
                 </div>
             </div>
         </div>
@@ -142,23 +144,6 @@ and open the template in the editor.
         <div class="ha-waypoint" data-animate-down="ha-header-rotate" data-animate-up="ha-header-small" style="width: 100%;height: 400px;background: #666666;">
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <script src="js/jquery-2.0.0.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <script>
             var $head = $('#ha-header');
@@ -176,6 +161,13 @@ and open the template in the editor.
                     }
                 }, {offset: '100%'});
             });
+        </script>
+        <script>
+
+            $(document).ready(function () {
+                $("body").smoothWheel();
+            });
+
         </script>
     </body>
 </html>
